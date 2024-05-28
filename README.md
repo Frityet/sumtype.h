@@ -19,9 +19,9 @@ int sum(struct BinaryTree *tree) {
 
 //if you are using GNU extensions or C2x, the types can be inferred!
 #if Sumtype_typeinference
-	match_tree(tree) {
-		let(leaf) return *leaf;
-		let(node) return sum(node->l) + node->x + sum(node->r);
+	match_t(tree) {
+		let_t(leaf) return *leaf;
+		let_t(node) return sum(node->l) + node->x + sum(node->r);
 	}
 #endif
 
